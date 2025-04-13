@@ -32,10 +32,7 @@ void loop()
   DateTime now = rtc.now();
   Serial.println(now.timestamp());
   if((now.hour() == 8 && now.minute() == 0 && now.second() == 0) || 
-    (now.hour() == 12 && now.minute() == 0 && now.second() == 0) || 
-    (now.hour() == 15 && now.minute() == 0 && now.second() == 0) || 
     (now.hour() == 18 && now.minute() == 0 && now.second() == 0) || 
-    (now.hour() == 21 && now.minute() == 0 && now.second() == 0) || 
     (now.hour() == 3 && now.minute() == 0 && now.second() == 0)){
       
     unsigned long start = millis();
